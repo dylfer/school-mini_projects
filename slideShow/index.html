@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide show</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="stlye.css" rel="stylesheet" type="text/css" /> -->
+  </head>
+  <body class="bg-slate-800 flex w-screen h-screen justify-center items-center">
+    <div class="overflow-hidden w-[87%]" id="carocell">
+      <button
+        class="absolute top-1/2 left-28 bg-gray-300 hover:bg-slate-600 p-2 rounded-xl z-10"
+        id="left_button"
+      >
+        &#10094;
+      </button>
+      <button
+        class="absolute top-1/2 right-28 bg-gray-300 hover:bg-slate-600 p-2 rounded-xl z-10"
+        id="right_button"
+      >
+        &#10095;
+      </button>
+
+      <div id="container" class="duration-700 flex aspect-video">
+        <!--images-->
+        <img
+          id="image1"
+          src="images/image1.jpg"
+          alt="Image 1"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="images/image2.jpg"
+          alt="Image 2"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="images/image3.jpg"
+          alt="Image 3"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="images/image4.jpg"
+          alt="Image 4"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="images/image5.jpg"
+          alt="Image 5"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="images/image1.jpg"
+          alt="Image 1"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
